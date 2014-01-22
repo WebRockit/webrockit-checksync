@@ -1,0 +1,14 @@
+webrockit:
+  host: 127.0.0.1
+  port: 8081
+  user: admin
+  pass: admin
+
+application:
+  basic_auth:
+    user: admin
+    pass: admin
+
+sensu:
+  #this should be the full path to the sensu conf.d dir
+  basedir: /etc/sensu/conf.d
