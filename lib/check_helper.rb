@@ -25,7 +25,8 @@ module CheckHelper
           files = Dir.entries(directory)
           files.each do |file|
             if Regexp.new("json") =~ file
-              puts "\tremoving #{file}"
+              puts "\tremoving #{basedir}/#{type}/#{file}"
+              File.delete("#{basedir}/#{type}/#{file}")
             end
           end
         else
@@ -59,6 +60,7 @@ module CheckHelper
         files.each do |file|
           if Regexp.new("json") =~ file
             puts "\tremoving #{file}"
+            File.delete("#{basedir}/#{type}/#{file}")
           end
         end
       else
