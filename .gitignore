@@ -20,3 +20,4 @@ doc/
 output
 config/config.yml
 Gemfile.lock
+webrockit-checksync.jar
